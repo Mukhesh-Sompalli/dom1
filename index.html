@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="quiet">click for the quite</button> -->
+    <button id="btn" onclick="names()">click me</button>
+        <h1 id="movies"></h1>
+    <script>
+    // let btn=document.getElementById("btn")
+    // btn.addEventListener("click",function(){
+    //     // btn=document.getElementById("btn")
+    //     document.body.style.backgroundColor="blue"
+    // })
+
+
+
+    // ---------------task1-------------
+let x=document.getElementById("btn")
+    x.addEventListener("click",function(){
+    let z=["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
+    hex="#";
+    for(i=0;i<6;i++){
+     hex+= z[Math.floor(Math.random()*z.length)]
+    }
+    document.body.style.backgroundColor=hex;
+})
+
+
+
+
+function names(){
+     k=["old is gold","every pain changes a person on strong way","belive ur your self","failures are stepping stones to success","every journey start with a single step","never give up "]
+    lk= k[Math.floor(Math.random()*k.length)]
+     b=document.getElementById("movies")
+    b.innerHTML=lk
+}
+
+
+    </script>
+</body>
+</html>
